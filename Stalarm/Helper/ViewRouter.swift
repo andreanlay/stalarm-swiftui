@@ -1,0 +1,19 @@
+//
+//  ViewRounter.swift
+//  Stalarm
+//
+//  Created by Andrean Lay on 09/05/21.
+//
+
+import SwiftUI
+
+enum Page {
+    case alarm
+    case timer
+}
+
+class ViewRouter: ObservableObject {
+    @Published var currentPage: Page = .alarm
+    
+    
+}

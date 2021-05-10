@@ -7,19 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D02896B2648FA5B001C4D8F /* AddAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896A2648FA5B001C4D8F /* AddAlarm.swift */; };
+		7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896D26490D02001C4D8F /* AlarmViewModel.swift */; };
+		7D028970264913C7001C4D8F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896F264913C7001C4D8F /* PersistenceController.swift */; };
+		7D02897326491B36001C4D8F /* AlarmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897226491B36001C4D8F /* AlarmStorage.swift */; };
+		7D02897826497B94001C4D8F /* DeleteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897726497B94001C4D8F /* DeleteCard.swift */; };
+		7D02897A264981F7001C4D8F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D028979264981F7001C4D8F /* NotificationManager.swift */; };
 		7D13EC9026479D8A00F611BA /* StalarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13EC8F26479D8A00F611BA /* StalarmApp.swift */; };
-		7D13EC9226479D8A00F611BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13EC9126479D8A00F611BA /* ContentView.swift */; };
+		7D13EC9226479D8A00F611BA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13EC9126479D8A00F611BA /* MainView.swift */; };
 		7D13EC9426479D8C00F611BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D13EC9326479D8C00F611BA /* Assets.xcassets */; };
 		7D13EC9726479D8C00F611BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D13EC9626479D8C00F611BA /* Preview Assets.xcassets */; };
+		7D13EC9F2647B0CF00F611BA /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13EC9E2647B0CF00F611BA /* ViewRouter.swift */; };
+		7D13ECA12647B2F000F611BA /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECA02647B2F000F611BA /* TabBarItem.swift */; };
+		7D13ECA32647EEE800F611BA /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECA22647EEE800F611BA /* AlarmListView.swift */; };
+		7D13ECA72647EFA700F611BA /* TimerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECA62647EFA700F611BA /* TimerListView.swift */; };
+		7D13ECA92647F24200F611BA /* AlarmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECA82647F24200F611BA /* AlarmCard.swift */; };
+		7D13ECAB264822A800F611BA /* EditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECAA264822A800F611BA /* EditAlarm.swift */; };
+		7D13ECAD26483A1B00F611BA /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECAC26483A1B00F611BA /* MusicList.swift */; };
+		7D13ECB02648486200F611BA /* Stalarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECAE2648486200F611BA /* Stalarm.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D02896A2648FA5B001C4D8F /* AddAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarm.swift; sourceTree = "<group>"; };
+		7D02896D26490D02001C4D8F /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		7D02896F264913C7001C4D8F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		7D02897226491B36001C4D8F /* AlarmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStorage.swift; sourceTree = "<group>"; };
+		7D02897726497B94001C4D8F /* DeleteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCard.swift; sourceTree = "<group>"; };
+		7D028979264981F7001C4D8F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		7D13EC8C26479D8A00F611BA /* Stalarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stalarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D13EC8F26479D8A00F611BA /* StalarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StalarmApp.swift; sourceTree = "<group>"; };
-		7D13EC9126479D8A00F611BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D13EC9126479D8A00F611BA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7D13EC9326479D8C00F611BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D13EC9626479D8C00F611BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D13EC9826479D8C00F611BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D13EC9E2647B0CF00F611BA /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		7D13ECA02647B2F000F611BA /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		7D13ECA22647EEE800F611BA /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		7D13ECA62647EFA700F611BA /* TimerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListView.swift; sourceTree = "<group>"; };
+		7D13ECA82647F24200F611BA /* AlarmCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCard.swift; sourceTree = "<group>"; };
+		7D13ECAA264822A800F611BA /* EditAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarm.swift; sourceTree = "<group>"; };
+		7D13ECAC26483A1B00F611BA /* MusicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicList.swift; sourceTree = "<group>"; };
+		7D13ECAF2648486200F611BA /* Stalarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stalarm.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +61,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D02896C26490BB0001C4D8F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D02896D26490D02001C4D8F /* AlarmViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		7D02897126491B28001C4D8F /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				7D028979264981F7001C4D8F /* NotificationManager.swift */,
+				7D02896F264913C7001C4D8F /* PersistenceController.swift */,
+				7D02897226491B36001C4D8F /* AlarmStorage.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		7D0289742649657E001C4D8F /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				7D13ECA22647EEE800F611BA /* AlarmListView.swift */,
+				7D13ECA82647F24200F611BA /* AlarmCard.swift */,
+				7D13ECAA264822A800F611BA /* EditAlarm.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
 		7D13EC8326479D8A00F611BA = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +108,15 @@
 		7D13EC8E26479D8A00F611BA /* Stalarm */ = {
 			isa = PBXGroup;
 			children = (
-				7D13EC8F26479D8A00F611BA /* StalarmApp.swift */,
-				7D13EC9126479D8A00F611BA /* ContentView.swift */,
+				7D02897126491B28001C4D8F /* Singleton */,
+				7D02896C26490BB0001C4D8F /* View Models */,
+				7D13ECA52647EF9400F611BA /* Application */,
+				7D13ECB22648487A00F611BA /* Helper */,
+				7D13ECB12648486800F611BA /* Core Data */,
 				7D13EC9326479D8C00F611BA /* Assets.xcassets */,
 				7D13EC9826479D8C00F611BA /* Info.plist */,
 				7D13EC9526479D8C00F611BA /* Preview Content */,
+				7D13ECA42647EF8B00F611BA /* Views */,
 			);
 			path = Stalarm;
 			sourceTree = "<group>";
@@ -67,6 +127,44 @@
 				7D13EC9626479D8C00F611BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D13ECA42647EF8B00F611BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D13EC9126479D8A00F611BA /* MainView.swift */,
+				7D13ECA02647B2F000F611BA /* TabBarItem.swift */,
+				7D0289742649657E001C4D8F /* Alarm */,
+				7D13ECA62647EFA700F611BA /* TimerListView.swift */,
+				7D13ECAC26483A1B00F611BA /* MusicList.swift */,
+				7D02896A2648FA5B001C4D8F /* AddAlarm.swift */,
+				7D02897726497B94001C4D8F /* DeleteCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D13ECA52647EF9400F611BA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7D13EC8F26479D8A00F611BA /* StalarmApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7D13ECB12648486800F611BA /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				7D13ECAE2648486200F611BA /* Stalarm.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		7D13ECB22648487A00F611BA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7D13EC9E2647B0CF00F611BA /* ViewRouter.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +236,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D13EC9226479D8A00F611BA /* ContentView.swift in Sources */,
+				7D13ECAD26483A1B00F611BA /* MusicList.swift in Sources */,
+				7D13EC9226479D8A00F611BA /* MainView.swift in Sources */,
+				7D13ECB02648486200F611BA /* Stalarm.xcdatamodeld in Sources */,
+				7D13ECA32647EEE800F611BA /* AlarmListView.swift in Sources */,
+				7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */,
+				7D13ECA72647EFA700F611BA /* TimerListView.swift in Sources */,
+				7D02897A264981F7001C4D8F /* NotificationManager.swift in Sources */,
+				7D13EC9F2647B0CF00F611BA /* ViewRouter.swift in Sources */,
+				7D02896B2648FA5B001C4D8F /* AddAlarm.swift in Sources */,
+				7D028970264913C7001C4D8F /* PersistenceController.swift in Sources */,
 				7D13EC9026479D8A00F611BA /* StalarmApp.swift in Sources */,
+				7D13ECAB264822A800F611BA /* EditAlarm.swift in Sources */,
+				7D02897326491B36001C4D8F /* AlarmStorage.swift in Sources */,
+				7D13ECA12647B2F000F611BA /* TabBarItem.swift in Sources */,
+				7D13ECA92647F24200F611BA /* AlarmCard.swift in Sources */,
+				7D02897826497B94001C4D8F /* DeleteCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +440,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7D13ECAE2648486200F611BA /* Stalarm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7D13ECAF2648486200F611BA /* Stalarm.xcdatamodel */,
+			);
+			currentVersion = 7D13ECAF2648486200F611BA /* Stalarm.xcdatamodel */;
+			path = Stalarm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7D13EC8426479D8A00F611BA /* Project object */;
 }
