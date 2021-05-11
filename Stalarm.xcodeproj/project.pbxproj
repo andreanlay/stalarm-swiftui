@@ -13,6 +13,10 @@
 		7D02897326491B36001C4D8F /* AlarmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897226491B36001C4D8F /* AlarmStorage.swift */; };
 		7D02897826497B94001C4D8F /* DeleteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897726497B94001C4D8F /* DeleteCard.swift */; };
 		7D02897A264981F7001C4D8F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D028979264981F7001C4D8F /* NotificationManager.swift */; };
+		7D02897D26498706001C4D8F /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897C26498706001C4D8F /* Onboarding.swift */; };
+		7D02897F26498925001C4D8F /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897E26498925001C4D8F /* FirstPage.swift */; };
+		7D02898126498934001C4D8F /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02898026498934001C4D8F /* SecondPage.swift */; };
+		7D028983264991C0001C4D8F /* NotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D028982264991C0001C4D8F /* NotificationRequest.swift */; };
 		7D13EC9026479D8A00F611BA /* StalarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13EC8F26479D8A00F611BA /* StalarmApp.swift */; };
 		7D13EC9226479D8A00F611BA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13EC9126479D8A00F611BA /* MainView.swift */; };
 		7D13EC9426479D8C00F611BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D13EC9326479D8C00F611BA /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 		7D02897226491B36001C4D8F /* AlarmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStorage.swift; sourceTree = "<group>"; };
 		7D02897726497B94001C4D8F /* DeleteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCard.swift; sourceTree = "<group>"; };
 		7D028979264981F7001C4D8F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		7D02897C26498706001C4D8F /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		7D02897E26498925001C4D8F /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		7D02898026498934001C4D8F /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		7D028982264991C0001C4D8F /* NotificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRequest.swift; sourceTree = "<group>"; };
 		7D13EC8C26479D8A00F611BA /* Stalarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stalarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D13EC8F26479D8A00F611BA /* StalarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StalarmApp.swift; sourceTree = "<group>"; };
 		7D13EC9126479D8A00F611BA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -89,6 +97,17 @@
 			path = Alarm;
 			sourceTree = "<group>";
 		};
+		7D02897B2649840F001C4D8F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7D02897C26498706001C4D8F /* Onboarding.swift */,
+				7D02897E26498925001C4D8F /* FirstPage.swift */,
+				7D02898026498934001C4D8F /* SecondPage.swift */,
+				7D028982264991C0001C4D8F /* NotificationRequest.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
 		7D13EC8326479D8A00F611BA = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +151,7 @@
 		7D13ECA42647EF8B00F611BA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7D02897B2649840F001C4D8F /* Onboarding */,
 				7D13EC9126479D8A00F611BA /* MainView.swift */,
 				7D13ECA02647B2F000F611BA /* TabBarItem.swift */,
 				7D0289742649657E001C4D8F /* Alarm */,
@@ -238,9 +258,13 @@
 			files = (
 				7D13ECAD26483A1B00F611BA /* MusicList.swift in Sources */,
 				7D13EC9226479D8A00F611BA /* MainView.swift in Sources */,
+				7D02898126498934001C4D8F /* SecondPage.swift in Sources */,
 				7D13ECB02648486200F611BA /* Stalarm.xcdatamodeld in Sources */,
 				7D13ECA32647EEE800F611BA /* AlarmListView.swift in Sources */,
 				7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */,
+				7D02897F26498925001C4D8F /* FirstPage.swift in Sources */,
+				7D02897D26498706001C4D8F /* Onboarding.swift in Sources */,
+				7D028983264991C0001C4D8F /* NotificationRequest.swift in Sources */,
 				7D13ECA72647EFA700F611BA /* TimerListView.swift in Sources */,
 				7D02897A264981F7001C4D8F /* NotificationManager.swift in Sources */,
 				7D13EC9F2647B0CF00F611BA /* ViewRouter.swift in Sources */,

@@ -12,40 +12,48 @@ struct MainView: View {
     @State var showPopUp = false
     
     var body: some View {
-        GeometryReader { geometry in
-            NavigationView {
-                VStack {
-                    Spacer()
-                    switch viewRouter.currentPage {
-                        case .alarm:
-                            AlarmListView()
-                        default:
-                            TimerListView()
-                    }
-                    Spacer()
-                    ZStack {
-                        if self.showPopUp {
-                            PlusMenu(size: geometry.size.width / 8)
-                                .offset(y: -geometry.size.height / 8)
+        if viewRouter.currentPage == .onboarding {
+            Onboarding()
+                .environmentObject(viewRouter)
+        } else if viewRouter.currentPage == .notificationRequest{
+            NotificationRequest()
+                .environmentObject(viewRouter)
+        } else {
+            GeometryReader { geometry in
+                NavigationView {
+                    VStack {
+                        Spacer()
+                        switch viewRouter.currentPage {
+                            case .alarm:
+                                AlarmListView()
+                            default:
+                                TimerListView()
                         }
-                        HStack {
-                            TabBarItem(viewRouter: viewRouter, width: geometry.size.width / 3, height: geometry.size.height / 28, pageName: .alarm, iconName: "alarm")
-                            VStack {
-                                CircleButton(imageName: "plus", size: geometry.size.width / 7 - 4) {
-                                    withAnimation {
-                                        self.showPopUp.toggle()
+                        Spacer()
+                        ZStack {
+                            if self.showPopUp {
+                                PlusMenu(size: geometry.size.width / 8)
+                                    .offset(y: -geometry.size.height / 8)
+                            }
+                            HStack {
+                                TabBarItem(viewRouter: viewRouter, width: geometry.size.width / 3, height: geometry.size.height / 28, pageName: .alarm, iconName: "alarm")
+                                VStack {
+                                    CircleButton(imageName: "plus", size: geometry.size.width / 7 - 4) {
+                                        withAnimation {
+                                            self.showPopUp.toggle()
+                                        }
                                     }
                                 }
+                                .rotationEffect(Angle(degrees: self.showPopUp ? 45 : 0))
+                                .offset(y: -geometry.size.height / 8 / 2)
+                                TabBarItem(viewRouter: viewRouter, width: geometry.size.width / 3, height: geometry.size.height / 28, pageName: .timer, iconName: "timer")
                             }
-                            .rotationEffect(Angle(degrees: self.showPopUp ? 45 : 0))
-                            .offset(y: -geometry.size.height / 8 / 2)
-                            TabBarItem(viewRouter: viewRouter, width: geometry.size.width / 3, height: geometry.size.height / 28, pageName: .timer, iconName: "timer")
+                            .frame(width: geometry.size.width, height: geometry.size.height / 8)
+                            .background(Color("TabBarBackground").shadow(radius: 1))
                         }
-                        .frame(width: geometry.size.width, height: geometry.size.height / 8)
-                        .background(Color("TabBarBackground").shadow(radius: 1))
                     }
+                    .edgesIgnoringSafeArea(.bottom)
                 }
-                .edgesIgnoringSafeArea(.bottom)
             }
         }
     }
