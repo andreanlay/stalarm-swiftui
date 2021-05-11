@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D008E22264A3BBF003C51AE /* Bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D008E1E264A3BBE003C51AE /* Bell.wav */; };
+		7D008E23264A3BBF003C51AE /* Adventure.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D008E1F264A3BBE003C51AE /* Adventure.wav */; };
+		7D008E24264A3BBF003C51AE /* Tenderness.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D008E20264A3BBE003C51AE /* Tenderness.wav */; };
+		7D008E25264A3BBF003C51AE /* Once Again.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D008E21264A3BBF003C51AE /* Once Again.wav */; };
 		7D02896B2648FA5B001C4D8F /* AddAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896A2648FA5B001C4D8F /* AddAlarm.swift */; };
 		7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896D26490D02001C4D8F /* AlarmViewModel.swift */; };
 		7D028970264913C7001C4D8F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896F264913C7001C4D8F /* PersistenceController.swift */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D008E1E264A3BBE003C51AE /* Bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bell.wav; sourceTree = "<group>"; };
+		7D008E1F264A3BBE003C51AE /* Adventure.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Adventure.wav; sourceTree = "<group>"; };
+		7D008E20264A3BBE003C51AE /* Tenderness.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tenderness.wav; sourceTree = "<group>"; };
+		7D008E21264A3BBF003C51AE /* Once Again.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Once Again.wav"; sourceTree = "<group>"; };
 		7D02896A2648FA5B001C4D8F /* AddAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarm.swift; sourceTree = "<group>"; };
 		7D02896D26490D02001C4D8F /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 		7D02896F264913C7001C4D8F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
@@ -69,6 +77,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D008E1D264A3B81003C51AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D008E1F264A3BBE003C51AE /* Adventure.wav */,
+				7D008E1E264A3BBE003C51AE /* Bell.wav */,
+				7D008E21264A3BBF003C51AE /* Once Again.wav */,
+				7D008E20264A3BBE003C51AE /* Tenderness.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7D02896C26490BB0001C4D8F /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +146,7 @@
 		7D13EC8E26479D8A00F611BA /* Stalarm */ = {
 			isa = PBXGroup;
 			children = (
+				7D008E1D264A3B81003C51AE /* Resources */,
 				7D02897126491B28001C4D8F /* Singleton */,
 				7D02896C26490BB0001C4D8F /* View Models */,
 				7D13ECA52647EF9400F611BA /* Application */,
@@ -245,7 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D13EC9726479D8C00F611BA /* Preview Assets.xcassets in Resources */,
+				7D008E22264A3BBF003C51AE /* Bell.wav in Resources */,
 				7D13EC9426479D8C00F611BA /* Assets.xcassets in Resources */,
+				7D008E25264A3BBF003C51AE /* Once Again.wav in Resources */,
+				7D008E24264A3BBF003C51AE /* Tenderness.wav in Resources */,
+				7D008E23264A3BBF003C51AE /* Adventure.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
