@@ -35,10 +35,11 @@ class AlarmStorage: NSObject, ObservableObject {
         }
     }
     
-    func add(name: String, time: Date, music: String, activityDuration: Int16, repeats: [String]) {
+    func add(id: String, name: String, time: Date, music: String, activityDuration: Int16, repeats: [String]) {
         let context = PersistenceController.shared.persistentContainer.viewContext
         let alarm = Alarm(context: context)
 
+        alarm.id = id
         alarm.name = name
         alarm.time = time
         alarm.music = music

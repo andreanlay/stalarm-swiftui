@@ -19,7 +19,7 @@ class ViewRouter: ObservableObject {
     
     init() {
         if !UserDefaults.standard.bool(forKey: "didLaunchBefore") {
-//            UserDefaults.standard.set(true, forKey: "didLaunchBefore")
+            UserDefaults.standard.set(true, forKey: "didLaunchBefore")
             currentPage = .onboarding
         } else {
             currentPage = .alarm

@@ -19,8 +19,22 @@ class AlarmViewModel: ObservableObject {
         }
     }
     
-    func addAlarm(name: String, time: Date, music: String, activityDuration: Int16, repeats: [String]) {
-        AlarmStorage.shared.add(name: name, time: time, music: music, activityDuration: activityDuration, repeats: repeats)
+    func addAlarm(name: String, time: Date, music: String, alarmDuration: String, repeats: [(String, Bool)]) -> String {
+        var alarmRepeat = [String]()
+        for days in repeats {
+            if days.1 {
+                alarmRepeat.append(days.0)
+            }
+        }
+        
+        let str = alarmDuration.split(separator: " ")
+        let activityDuration = Int16(Double(str[0])! * 60)
+        
+        let id = UUID().uuidString
+        
+        AlarmStorage.shared.add(id: id, name: name, time: time, music: music, activityDuration: activityDuration, repeats: alarmRepeat)
+        
+        return id
     }
     
     func editAlarm(alarm: Alarm, name: String, time: Date, music: String, activityDuration: Int16, repeats: [String]) {

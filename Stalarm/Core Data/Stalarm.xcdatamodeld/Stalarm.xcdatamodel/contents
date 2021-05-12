@@ -3,12 +3,13 @@
     <entity name="Alarm" representedClassName="Alarm" syncable="YES" codeGenerationType="class">
         <attribute name="active" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
         <attribute name="activityDuration" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
         <attribute name="music" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="repeatDay" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName" customClassName="[String]"/>
         <attribute name="time" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <elements>
-        <element name="Alarm" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Alarm" positionX="-63" positionY="-18" width="128" height="134"/>
     </elements>
 </model>

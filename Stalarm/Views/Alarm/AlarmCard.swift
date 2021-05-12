@@ -21,7 +21,7 @@ struct AlarmCard: View {
                     Text(alarm.name ?? "")
                         .font(.title)
                         .bold()
-                    Text("02 : 21 PM")
+                    Text(self.formatTime(for: alarm.time ?? Date()))
                         .font(.title2)
                         .bold()
                     Spacer()
@@ -82,6 +82,13 @@ struct AlarmCard: View {
                 self.horizontalOffset = 0
             }
         }
+    }
+    
+    private func formatTime(for date: Date) -> String {
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "h:mm a"
+        return formatter.string(from: date)
     }
 }
 

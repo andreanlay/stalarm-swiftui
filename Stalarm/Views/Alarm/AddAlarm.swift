@@ -78,17 +78,9 @@ struct AddAlarm: View {
     }
     
     private func saveAlarm() {
-        var repeats = [String]()
-        for days in alarmRepeat {
-            if days.1 {
-                repeats.append(days.0)
-            }
-        }
+        let alarmId = viewModel.addAlarm(name: self.alarmName, time: self.alarmDate, music: self.alarmMusic!, alarmDuration: self.alarmDuration, repeats: self.alarmRepeat)
         
-        let str = self.alarmDuration.split(separator: " ")
-        let activityDuration = Int16(Double(str[0])! * 60)
-        
-        viewModel.addAlarm(name: self.alarmName, time: self.alarmDate, music: self.alarmMusic!, activityDuration: activityDuration, repeats: repeats)
+        NotificationManager.shared.scheduleRepeatedNotification(id: alarmId, title: self.alarmName, for: self.alarmRepeat, on: self.alarmDate, stopDuration: self.alarmDuration, musicName: self.alarmMusic!)
         
         self.dismissSheet()
     }

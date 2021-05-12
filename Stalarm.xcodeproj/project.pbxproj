@@ -11,6 +11,13 @@
 		7D008E23264A3BBF003C51AE /* Adventure.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D008E1F264A3BBE003C51AE /* Adventure.wav */; };
 		7D008E24264A3BBF003C51AE /* Tenderness.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D008E20264A3BBE003C51AE /* Tenderness.wav */; };
 		7D008E25264A3BBF003C51AE /* Once Again.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D008E21264A3BBF003C51AE /* Once Again.wav */; };
+		7D008E28264A3CD0003C51AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D008E27264A3CD0003C51AE /* Constants.swift */; };
+		7D008E2A264A4A66003C51AE /* NotificationRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D008E29264A4A66003C51AE /* NotificationRequestManager.swift */; };
+		7D008E2D264A4FAD003C51AE /* MainTriggeredAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D008E2C264A4FAD003C51AE /* MainTriggeredAlarmView.swift */; };
+		7D008E2F264A503B003C51AE /* AlarmNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D008E2E264A503B003C51AE /* AlarmNotificationView.swift */; };
+		7D008E31264A5042003C51AE /* AlarmStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D008E30264A5042003C51AE /* AlarmStopView.swift */; };
+		7D008E34264A68B0003C51AE /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D008E33264A68B0003C51AE /* CircleProgressView.swift */; };
+		7D008E36264A6EC7003C51AE /* ActivityRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D008E35264A6EC7003C51AE /* ActivityRecognizer.swift */; };
 		7D02896B2648FA5B001C4D8F /* AddAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896A2648FA5B001C4D8F /* AddAlarm.swift */; };
 		7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896D26490D02001C4D8F /* AlarmViewModel.swift */; };
 		7D028970264913C7001C4D8F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896F264913C7001C4D8F /* PersistenceController.swift */; };
@@ -40,6 +47,13 @@
 		7D008E1F264A3BBE003C51AE /* Adventure.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Adventure.wav; sourceTree = "<group>"; };
 		7D008E20264A3BBE003C51AE /* Tenderness.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tenderness.wav; sourceTree = "<group>"; };
 		7D008E21264A3BBF003C51AE /* Once Again.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Once Again.wav"; sourceTree = "<group>"; };
+		7D008E27264A3CD0003C51AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7D008E29264A4A66003C51AE /* NotificationRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRequestManager.swift; sourceTree = "<group>"; };
+		7D008E2C264A4FAD003C51AE /* MainTriggeredAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTriggeredAlarmView.swift; sourceTree = "<group>"; };
+		7D008E2E264A503B003C51AE /* AlarmNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmNotificationView.swift; sourceTree = "<group>"; };
+		7D008E30264A5042003C51AE /* AlarmStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStopView.swift; sourceTree = "<group>"; };
+		7D008E33264A68B0003C51AE /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		7D008E35264A6EC7003C51AE /* ActivityRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRecognizer.swift; sourceTree = "<group>"; };
 		7D02896A2648FA5B001C4D8F /* AddAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarm.swift; sourceTree = "<group>"; };
 		7D02896D26490D02001C4D8F /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 		7D02896F264913C7001C4D8F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
@@ -88,6 +102,32 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		7D008E26264A3CC7003C51AE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7D008E27264A3CD0003C51AE /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7D008E2B264A4F70003C51AE /* AlarmTriggered */ = {
+			isa = PBXGroup;
+			children = (
+				7D008E2C264A4FAD003C51AE /* MainTriggeredAlarmView.swift */,
+				7D008E2E264A503B003C51AE /* AlarmNotificationView.swift */,
+				7D008E30264A5042003C51AE /* AlarmStopView.swift */,
+			);
+			path = AlarmTriggered;
+			sourceTree = "<group>";
+		};
+		7D008E32264A689B003C51AE /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				7D13ECA62647EFA700F611BA /* TimerListView.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		7D02896C26490BB0001C4D8F /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +149,7 @@
 		7D0289742649657E001C4D8F /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				7D02896A2648FA5B001C4D8F /* AddAlarm.swift */,
 				7D13ECA22647EEE800F611BA /* AlarmListView.swift */,
 				7D13ECA82647F24200F611BA /* AlarmCard.swift */,
 				7D13ECAA264822A800F611BA /* EditAlarm.swift */,
@@ -146,6 +187,7 @@
 		7D13EC8E26479D8A00F611BA /* Stalarm */ = {
 			isa = PBXGroup;
 			children = (
+				7D008E26264A3CC7003C51AE /* Utils */,
 				7D008E1D264A3B81003C51AE /* Resources */,
 				7D02897126491B28001C4D8F /* Singleton */,
 				7D02896C26490BB0001C4D8F /* View Models */,
@@ -171,14 +213,15 @@
 		7D13ECA42647EF8B00F611BA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7D008E2B264A4F70003C51AE /* AlarmTriggered */,
 				7D02897B2649840F001C4D8F /* Onboarding */,
 				7D13EC9126479D8A00F611BA /* MainView.swift */,
 				7D13ECA02647B2F000F611BA /* TabBarItem.swift */,
 				7D0289742649657E001C4D8F /* Alarm */,
-				7D13ECA62647EFA700F611BA /* TimerListView.swift */,
+				7D008E32264A689B003C51AE /* Timer */,
 				7D13ECAC26483A1B00F611BA /* MusicList.swift */,
-				7D02896A2648FA5B001C4D8F /* AddAlarm.swift */,
 				7D02897726497B94001C4D8F /* DeleteCard.swift */,
+				7D008E33264A68B0003C51AE /* CircleProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,7 +245,9 @@
 		7D13ECB22648487A00F611BA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7D008E35264A6EC7003C51AE /* ActivityRecognizer.swift */,
 				7D13EC9E2647B0CF00F611BA /* ViewRouter.swift */,
+				7D008E29264A4A66003C51AE /* NotificationRequestManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -280,24 +325,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D008E2A264A4A66003C51AE /* NotificationRequestManager.swift in Sources */,
+				7D008E36264A6EC7003C51AE /* ActivityRecognizer.swift in Sources */,
 				7D13ECAD26483A1B00F611BA /* MusicList.swift in Sources */,
 				7D13EC9226479D8A00F611BA /* MainView.swift in Sources */,
 				7D02898126498934001C4D8F /* SecondPage.swift in Sources */,
 				7D13ECB02648486200F611BA /* Stalarm.xcdatamodeld in Sources */,
 				7D13ECA32647EEE800F611BA /* AlarmListView.swift in Sources */,
+				7D008E31264A5042003C51AE /* AlarmStopView.swift in Sources */,
 				7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */,
 				7D02897F26498925001C4D8F /* FirstPage.swift in Sources */,
 				7D02897D26498706001C4D8F /* Onboarding.swift in Sources */,
 				7D028983264991C0001C4D8F /* NotificationRequest.swift in Sources */,
 				7D13ECA72647EFA700F611BA /* TimerListView.swift in Sources */,
 				7D02897A264981F7001C4D8F /* NotificationManager.swift in Sources */,
+				7D008E28264A3CD0003C51AE /* Constants.swift in Sources */,
 				7D13EC9F2647B0CF00F611BA /* ViewRouter.swift in Sources */,
 				7D02896B2648FA5B001C4D8F /* AddAlarm.swift in Sources */,
 				7D028970264913C7001C4D8F /* PersistenceController.swift in Sources */,
+				7D008E34264A68B0003C51AE /* CircleProgressView.swift in Sources */,
 				7D13EC9026479D8A00F611BA /* StalarmApp.swift in Sources */,
 				7D13ECAB264822A800F611BA /* EditAlarm.swift in Sources */,
+				7D008E2D264A4FAD003C51AE /* MainTriggeredAlarmView.swift in Sources */,
 				7D02897326491B36001C4D8F /* AlarmStorage.swift in Sources */,
 				7D13ECA12647B2F000F611BA /* TabBarItem.swift in Sources */,
+				7D008E2F264A503B003C51AE /* AlarmNotificationView.swift in Sources */,
 				7D13ECA92647F24200F611BA /* AlarmCard.swift in Sources */,
 				7D02897826497B94001C4D8F /* DeleteCard.swift in Sources */,
 			);

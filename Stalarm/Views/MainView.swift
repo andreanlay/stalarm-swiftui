@@ -9,10 +9,15 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewRouter: ViewRouter
+    @EnvironmentObject var notificationRequestManager: NotificationRequestManager
     @State var showPopUp = false
     
     var body: some View {
-        if viewRouter.currentPage == .onboarding {
+        if (notificationRequestManager.notificationData != nil) {
+            MainTriggeredAlarmView()
+                .environmentObject(notificationRequestManager)
+                .environmentObject(viewRouter)
+        }else if viewRouter.currentPage == .onboarding {
             Onboarding()
                 .environmentObject(viewRouter)
         } else if viewRouter.currentPage == .notificationRequest{
