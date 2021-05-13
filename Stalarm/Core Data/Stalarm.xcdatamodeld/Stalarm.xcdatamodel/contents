@@ -9,7 +9,13 @@
         <attribute name="repeatDay" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName" customClassName="[String]"/>
         <attribute name="time" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
+    <entity name="CountdownTimer" representedClassName="CountdownTimer" syncable="YES" codeGenerationType="class">
+        <attribute name="currentDuration" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxDuration" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+    </entity>
     <elements>
         <element name="Alarm" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="CountdownTimer" positionX="-63" positionY="36" width="128" height="74"/>
     </elements>
 </model>

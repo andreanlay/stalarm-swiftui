@@ -22,7 +22,7 @@
 		7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896D26490D02001C4D8F /* AlarmViewModel.swift */; };
 		7D028970264913C7001C4D8F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02896F264913C7001C4D8F /* PersistenceController.swift */; };
 		7D02897326491B36001C4D8F /* AlarmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897226491B36001C4D8F /* AlarmStorage.swift */; };
-		7D02897826497B94001C4D8F /* DeleteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897726497B94001C4D8F /* DeleteCard.swift */; };
+		7D02897826497B94001C4D8F /* AlarmDeleteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897726497B94001C4D8F /* AlarmDeleteCard.swift */; };
 		7D02897A264981F7001C4D8F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D028979264981F7001C4D8F /* NotificationManager.swift */; };
 		7D02897D26498706001C4D8F /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897C26498706001C4D8F /* Onboarding.swift */; };
 		7D02897F26498925001C4D8F /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02897E26498925001C4D8F /* FirstPage.swift */; };
@@ -47,6 +47,9 @@
 		7D5C623C264C1E4700F8C9C7 /* AddTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C623B264C1E4700F8C9C7 /* AddTimer.swift */; };
 		7D5C623E264C234400F8C9C7 /* TimerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C623D264C234400F8C9C7 /* TimerPicker.swift */; };
 		7D5C6240264C3DD500F8C9C7 /* TimerActiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C623F264C3DD500F8C9C7 /* TimerActiveViewModel.swift */; };
+		7D6465F4264CE6B9009E82A5 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6465F3264CE6B9009E82A5 /* AudioManager.swift */; };
+		7D6465F6264CE718009E82A5 /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6465F5264CE718009E82A5 /* MusicListViewModel.swift */; };
+		7D6465F8264CE97F009E82A5 /* DeleteTimerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6465F7264CE97F009E82A5 /* DeleteTimerCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +68,7 @@
 		7D02896D26490D02001C4D8F /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 		7D02896F264913C7001C4D8F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		7D02897226491B36001C4D8F /* AlarmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStorage.swift; sourceTree = "<group>"; };
-		7D02897726497B94001C4D8F /* DeleteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCard.swift; sourceTree = "<group>"; };
+		7D02897726497B94001C4D8F /* AlarmDeleteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDeleteCard.swift; sourceTree = "<group>"; };
 		7D028979264981F7001C4D8F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		7D02897C26498706001C4D8F /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		7D02897E26498925001C4D8F /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
@@ -92,6 +95,9 @@
 		7D5C623B264C1E4700F8C9C7 /* AddTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimer.swift; sourceTree = "<group>"; };
 		7D5C623D264C234400F8C9C7 /* TimerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPicker.swift; sourceTree = "<group>"; };
 		7D5C623F264C3DD500F8C9C7 /* TimerActiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerActiveViewModel.swift; sourceTree = "<group>"; };
+		7D6465F3264CE6B9009E82A5 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		7D6465F5264CE718009E82A5 /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
+		7D6465F7264CE97F009E82A5 /* DeleteTimerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTimerCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 				7D13ECA62647EFA700F611BA /* TimerListView.swift */,
 				7D5C6239264BD2B800F8C9C7 /* TimerCard.swift */,
 				7D5C623B264C1E4700F8C9C7 /* AddTimer.swift */,
+				7D6465F7264CE97F009E82A5 /* DeleteTimerCard.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 				7D5C6233264B8D2100F8C9C7 /* AlarmTriggeredViewModel.swift */,
 				7D5C6235264BB30E00F8C9C7 /* TimerViewModel.swift */,
 				7D5C623F264C3DD500F8C9C7 /* TimerActiveViewModel.swift */,
+				7D6465F5264CE718009E82A5 /* MusicListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 				7D02896F264913C7001C4D8F /* PersistenceController.swift */,
 				7D02897226491B36001C4D8F /* AlarmStorage.swift */,
 				7D5C6237264BB35300F8C9C7 /* TimerStorage.swift */,
+				7D6465F3264CE6B9009E82A5 /* AudioManager.swift */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -169,10 +178,12 @@
 		7D0289742649657E001C4D8F /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				7D13ECAC26483A1B00F611BA /* MusicList.swift */,
 				7D02896A2648FA5B001C4D8F /* AddAlarm.swift */,
 				7D13ECA22647EEE800F611BA /* AlarmListView.swift */,
 				7D13ECA82647F24200F611BA /* AlarmCard.swift */,
 				7D13ECAA264822A800F611BA /* EditAlarm.swift */,
+				7D02897726497B94001C4D8F /* AlarmDeleteCard.swift */,
 			);
 			path = Alarm;
 			sourceTree = "<group>";
@@ -239,8 +250,6 @@
 				7D008E32264A689B003C51AE /* Timer */,
 				7D13EC9126479D8A00F611BA /* MainView.swift */,
 				7D13ECA02647B2F000F611BA /* TabBarItem.swift */,
-				7D13ECAC26483A1B00F611BA /* MusicList.swift */,
-				7D02897726497B94001C4D8F /* DeleteCard.swift */,
 				7D008E33264A68B0003C51AE /* CircleProgressView.swift */,
 				7D5C623D264C234400F8C9C7 /* TimerPicker.swift */,
 			);
@@ -354,6 +363,7 @@
 				7D13ECB02648486200F611BA /* Stalarm.xcdatamodeld in Sources */,
 				7D13ECA32647EEE800F611BA /* AlarmListView.swift in Sources */,
 				7D5C6238264BB35300F8C9C7 /* TimerStorage.swift in Sources */,
+				7D6465F4264CE6B9009E82A5 /* AudioManager.swift in Sources */,
 				7D008E31264A5042003C51AE /* AlarmStopView.swift in Sources */,
 				7D5C623A264BD2B800F8C9C7 /* TimerCard.swift in Sources */,
 				7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */,
@@ -371,15 +381,17 @@
 				7D028970264913C7001C4D8F /* PersistenceController.swift in Sources */,
 				7D008E34264A68B0003C51AE /* CircleProgressView.swift in Sources */,
 				7D13EC9026479D8A00F611BA /* StalarmApp.swift in Sources */,
+				7D6465F8264CE97F009E82A5 /* DeleteTimerCard.swift in Sources */,
 				7D13ECAB264822A800F611BA /* EditAlarm.swift in Sources */,
 				7D5C6236264BB30E00F8C9C7 /* TimerViewModel.swift in Sources */,
 				7D008E2D264A4FAD003C51AE /* MainTriggeredAlarmView.swift in Sources */,
 				7D5C6234264B8D2100F8C9C7 /* AlarmTriggeredViewModel.swift in Sources */,
 				7D02897326491B36001C4D8F /* AlarmStorage.swift in Sources */,
 				7D13ECA12647B2F000F611BA /* TabBarItem.swift in Sources */,
+				7D6465F6264CE718009E82A5 /* MusicListViewModel.swift in Sources */,
 				7D008E2F264A503B003C51AE /* AlarmNotificationView.swift in Sources */,
 				7D13ECA92647F24200F611BA /* AlarmCard.swift in Sources */,
-				7D02897826497B94001C4D8F /* DeleteCard.swift in Sources */,
+				7D02897826497B94001C4D8F /* AlarmDeleteCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

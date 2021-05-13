@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MusicList: View {
+    @Environment(\.presentationMode) var presentationMode
+    @State private var viewModel = MusicListViewModel()
     let musics = ["Adventure", "Once Again", "Tenderness"]
     
     @Binding var selectedMusic: String?
@@ -24,7 +26,16 @@ struct MusicList: View {
             .contentShape(Rectangle())
             .onTapGesture {
                 self.selectedMusic = music
+                viewModel.playMusic(name: music)
             }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: Button(action : {
+                viewModel.stopMusic()
+                self.presentationMode.wrappedValue.dismiss()
+            }){
+                Image(systemName: "chevron.left")
+                Text("Back")
+            })
         }
     }
 }
