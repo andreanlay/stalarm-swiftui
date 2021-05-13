@@ -23,7 +23,7 @@ struct AlarmListView: View {
                     ForEach(viewModel.alarms, id:\.self) { alarm in
                         ZStack {
                             HStack {
-                                DeleteCard(alarm: alarm)
+                                AlarmDeleteCard(alarm: alarm)
                             }
                             HStack {
                                 AlarmCard(alarm: alarm)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DeleteCard: View {
+struct AlarmDeleteCard: View {
     @StateObject private var viewModel = AlarmViewModel()
     var alarm: Alarm
     
@@ -37,6 +37,6 @@ struct DeleteCard: View {
 
 struct DeleteCard_Previews: PreviewProvider {
     static var previews: some View {
-        DeleteCard(alarm: Alarm())
+        AlarmDeleteCard(alarm: Alarm())
     }
 }
