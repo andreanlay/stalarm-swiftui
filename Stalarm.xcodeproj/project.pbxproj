@@ -40,6 +40,13 @@
 		7D13ECAB264822A800F611BA /* EditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECAA264822A800F611BA /* EditAlarm.swift */; };
 		7D13ECAD26483A1B00F611BA /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECAC26483A1B00F611BA /* MusicList.swift */; };
 		7D13ECB02648486200F611BA /* Stalarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D13ECAE2648486200F611BA /* Stalarm.xcdatamodeld */; };
+		7D5C6234264B8D2100F8C9C7 /* AlarmTriggeredViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C6233264B8D2100F8C9C7 /* AlarmTriggeredViewModel.swift */; };
+		7D5C6236264BB30E00F8C9C7 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C6235264BB30E00F8C9C7 /* TimerViewModel.swift */; };
+		7D5C6238264BB35300F8C9C7 /* TimerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C6237264BB35300F8C9C7 /* TimerStorage.swift */; };
+		7D5C623A264BD2B800F8C9C7 /* TimerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C6239264BD2B800F8C9C7 /* TimerCard.swift */; };
+		7D5C623C264C1E4700F8C9C7 /* AddTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C623B264C1E4700F8C9C7 /* AddTimer.swift */; };
+		7D5C623E264C234400F8C9C7 /* TimerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C623D264C234400F8C9C7 /* TimerPicker.swift */; };
+		7D5C6240264C3DD500F8C9C7 /* TimerActiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5C623F264C3DD500F8C9C7 /* TimerActiveViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +85,13 @@
 		7D13ECAA264822A800F611BA /* EditAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarm.swift; sourceTree = "<group>"; };
 		7D13ECAC26483A1B00F611BA /* MusicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicList.swift; sourceTree = "<group>"; };
 		7D13ECAF2648486200F611BA /* Stalarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stalarm.xcdatamodel; sourceTree = "<group>"; };
+		7D5C6233264B8D2100F8C9C7 /* AlarmTriggeredViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTriggeredViewModel.swift; sourceTree = "<group>"; };
+		7D5C6235264BB30E00F8C9C7 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		7D5C6237264BB35300F8C9C7 /* TimerStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStorage.swift; sourceTree = "<group>"; };
+		7D5C6239264BD2B800F8C9C7 /* TimerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCard.swift; sourceTree = "<group>"; };
+		7D5C623B264C1E4700F8C9C7 /* AddTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimer.swift; sourceTree = "<group>"; };
+		7D5C623D264C234400F8C9C7 /* TimerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPicker.swift; sourceTree = "<group>"; };
+		7D5C623F264C3DD500F8C9C7 /* TimerActiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerActiveViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				7D13ECA62647EFA700F611BA /* TimerListView.swift */,
+				7D5C6239264BD2B800F8C9C7 /* TimerCard.swift */,
+				7D5C623B264C1E4700F8C9C7 /* AddTimer.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -132,6 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				7D02896D26490D02001C4D8F /* AlarmViewModel.swift */,
+				7D5C6233264B8D2100F8C9C7 /* AlarmTriggeredViewModel.swift */,
+				7D5C6235264BB30E00F8C9C7 /* TimerViewModel.swift */,
+				7D5C623F264C3DD500F8C9C7 /* TimerActiveViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -142,6 +161,7 @@
 				7D028979264981F7001C4D8F /* NotificationManager.swift */,
 				7D02896F264913C7001C4D8F /* PersistenceController.swift */,
 				7D02897226491B36001C4D8F /* AlarmStorage.swift */,
+				7D5C6237264BB35300F8C9C7 /* TimerStorage.swift */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -193,11 +213,11 @@
 				7D02896C26490BB0001C4D8F /* View Models */,
 				7D13ECA52647EF9400F611BA /* Application */,
 				7D13ECB22648487A00F611BA /* Helper */,
+				7D13ECA42647EF8B00F611BA /* Views */,
 				7D13ECB12648486800F611BA /* Core Data */,
 				7D13EC9326479D8C00F611BA /* Assets.xcassets */,
 				7D13EC9826479D8C00F611BA /* Info.plist */,
 				7D13EC9526479D8C00F611BA /* Preview Content */,
-				7D13ECA42647EF8B00F611BA /* Views */,
 			);
 			path = Stalarm;
 			sourceTree = "<group>";
@@ -215,13 +235,14 @@
 			children = (
 				7D008E2B264A4F70003C51AE /* AlarmTriggered */,
 				7D02897B2649840F001C4D8F /* Onboarding */,
-				7D13EC9126479D8A00F611BA /* MainView.swift */,
-				7D13ECA02647B2F000F611BA /* TabBarItem.swift */,
 				7D0289742649657E001C4D8F /* Alarm */,
 				7D008E32264A689B003C51AE /* Timer */,
+				7D13EC9126479D8A00F611BA /* MainView.swift */,
+				7D13ECA02647B2F000F611BA /* TabBarItem.swift */,
 				7D13ECAC26483A1B00F611BA /* MusicList.swift */,
 				7D02897726497B94001C4D8F /* DeleteCard.swift */,
 				7D008E33264A68B0003C51AE /* CircleProgressView.swift */,
+				7D5C623D264C234400F8C9C7 /* TimerPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,9 +353,12 @@
 				7D02898126498934001C4D8F /* SecondPage.swift in Sources */,
 				7D13ECB02648486200F611BA /* Stalarm.xcdatamodeld in Sources */,
 				7D13ECA32647EEE800F611BA /* AlarmListView.swift in Sources */,
+				7D5C6238264BB35300F8C9C7 /* TimerStorage.swift in Sources */,
 				7D008E31264A5042003C51AE /* AlarmStopView.swift in Sources */,
+				7D5C623A264BD2B800F8C9C7 /* TimerCard.swift in Sources */,
 				7D02896E26490D02001C4D8F /* AlarmViewModel.swift in Sources */,
 				7D02897F26498925001C4D8F /* FirstPage.swift in Sources */,
+				7D5C6240264C3DD500F8C9C7 /* TimerActiveViewModel.swift in Sources */,
 				7D02897D26498706001C4D8F /* Onboarding.swift in Sources */,
 				7D028983264991C0001C4D8F /* NotificationRequest.swift in Sources */,
 				7D13ECA72647EFA700F611BA /* TimerListView.swift in Sources */,
@@ -342,11 +366,15 @@
 				7D008E28264A3CD0003C51AE /* Constants.swift in Sources */,
 				7D13EC9F2647B0CF00F611BA /* ViewRouter.swift in Sources */,
 				7D02896B2648FA5B001C4D8F /* AddAlarm.swift in Sources */,
+				7D5C623C264C1E4700F8C9C7 /* AddTimer.swift in Sources */,
+				7D5C623E264C234400F8C9C7 /* TimerPicker.swift in Sources */,
 				7D028970264913C7001C4D8F /* PersistenceController.swift in Sources */,
 				7D008E34264A68B0003C51AE /* CircleProgressView.swift in Sources */,
 				7D13EC9026479D8A00F611BA /* StalarmApp.swift in Sources */,
 				7D13ECAB264822A800F611BA /* EditAlarm.swift in Sources */,
+				7D5C6236264BB30E00F8C9C7 /* TimerViewModel.swift in Sources */,
 				7D008E2D264A4FAD003C51AE /* MainTriggeredAlarmView.swift in Sources */,
+				7D5C6234264B8D2100F8C9C7 /* AlarmTriggeredViewModel.swift in Sources */,
 				7D02897326491B36001C4D8F /* AlarmStorage.swift in Sources */,
 				7D13ECA12647B2F000F611BA /* TabBarItem.swift in Sources */,
 				7D008E2F264A503B003C51AE /* AlarmNotificationView.swift in Sources */,

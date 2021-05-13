@@ -78,9 +78,7 @@ struct AddAlarm: View {
     }
     
     private func saveAlarm() {
-        let alarmId = viewModel.addAlarm(name: self.alarmName, time: self.alarmDate, music: self.alarmMusic!, alarmDuration: self.alarmDuration, repeats: self.alarmRepeat)
-        
-        NotificationManager.shared.scheduleRepeatedNotification(id: alarmId, title: self.alarmName, for: self.alarmRepeat, on: self.alarmDate, stopDuration: self.alarmDuration, musicName: self.alarmMusic!)
+        viewModel.addAlarm(name: self.alarmName, time: self.alarmDate, music: self.alarmMusic!, alarmDuration: self.alarmDuration, repeats: self.alarmRepeat)
         
         self.dismissSheet()
     }

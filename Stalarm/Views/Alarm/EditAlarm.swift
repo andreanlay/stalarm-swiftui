@@ -99,17 +99,7 @@ struct EditAlarm: View {
     }
     
     private func saveAlarm() {
-        var repeats = [String]()
-        for days in alarmRepeat {
-            if days.1 {
-                repeats.append(days.0)
-            }
-        }
-        
-        let str = self.alarmDuration.split(separator: " ")
-        let activityDuration = Int16(Double(str[0])! * 60)
-        
-        viewModel.editAlarm(alarm: alarm, name: alarmName, time: alarmDate, music: alarmMusic!, activityDuration: activityDuration, repeats: repeats)
+        viewModel.editAlarm(alarm: alarm, name: alarmName, time: alarmDate, music: alarmMusic!, activityDuration: alarmDuration, repeats: alarmRepeat)
         
         self.dismissSheet()
     }

@@ -17,10 +17,10 @@ struct MainView: View {
             MainTriggeredAlarmView()
                 .environmentObject(notificationRequestManager)
                 .environmentObject(viewRouter)
-        }else if viewRouter.currentPage == .onboarding {
+        } else if viewRouter.currentPage == .onboarding {
             Onboarding()
                 .environmentObject(viewRouter)
-        } else if viewRouter.currentPage == .notificationRequest{
+        } else if viewRouter.currentPage == .notificationRequest {
             NotificationRequest()
                 .environmentObject(viewRouter)
         } else {
@@ -86,6 +86,9 @@ struct PlusMenu: View {
             }
             CircleButton(imageName: "timer", size: size) {
                 self.showAddTimer = true
+            }
+            .sheet(isPresented: $showAddTimer) {
+                AddTimer()
             }
         }
         .transition(.scale)
