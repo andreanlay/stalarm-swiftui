@@ -34,9 +34,11 @@ struct SecondPage: View {
             }
             .offset(y: 60)
         }
-    }
+    } 
     
     private func goToNotificationPage() {
+        UserDefaults.standard.set(true, forKey: "didLaunchBefore")
+        
         withAnimation {
             viewRouter.currentPage = .notificationRequest
         }
