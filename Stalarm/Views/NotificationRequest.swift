@@ -14,7 +14,7 @@ struct NotificationRequest: View {
         VStack {
             VStack(spacing: 20) {
                 Image("notification-icon")
-                Text("Everytime you want to stop an \n alarm, you need to get out of bed \n and walk first")
+                Text("Everytime you want to stop an \n alarm, you need to get out of bed \n and move first")
                     .multilineTextAlignment(.center)
                     .font(.title3)
             }
