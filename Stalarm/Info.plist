@@ -48,5 +48,7 @@
 	</array>
 	<key>NSMotionUsageDescription</key>
 	<string>We need to detect activities using your iPhone sensors</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
